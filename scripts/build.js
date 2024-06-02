@@ -3,7 +3,7 @@ import { dirname, resolve } from "node:path";
 import { marked } from "marked";
 
 const inputDir = resolve(import.meta.dirname, "..");
-const outputDir = resolve(import.meta.dirname, "../dist");
+const outputDir = resolve(inputDir, "../dist");
 
 async function createHtml() {
   const inputPath = resolve(inputDir, "README.md");
@@ -36,6 +36,7 @@ async function copyDirectory(dir) {
 
 await rm(outputDir, {
   recursive: true,
+  force: true,
 });
 
 await createHtml();
