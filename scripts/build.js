@@ -4,7 +4,7 @@ import { marked } from "marked";
 
 const inputDir = resolve(import.meta.dirname, "..");
 const outputDir = resolve(inputDir, "../dist");
-
+console.log({ outputDir });
 async function createHtml() {
   const inputPath = resolve(inputDir, "README.md");
   const outputPath = resolve(outputDir, "index.html");
