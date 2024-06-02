@@ -15,7 +15,7 @@ async function createHtml() {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title</title>
+<title>Seitentitel</title>
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
